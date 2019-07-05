@@ -1,0 +1,7 @@
+LIBRARY MYDLL
+EXPORTS
+		Addition
+		Subtraction
+		Multiplication
+		Division
+		Modulus
