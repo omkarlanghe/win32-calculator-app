@@ -118,6 +118,7 @@
     <ClCompile Include="DialogBox.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Calculator.h" />
     <ClInclude Include="MyDialog.h" />
   </ItemGroup>
   <ItemGroup>

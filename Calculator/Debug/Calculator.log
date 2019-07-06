@@ -1,21 +1,24 @@
 ﻿  DialogBox.cpp
-e:\omkar\gokhale sir\calculator\dialogbox.cpp(197): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-e:\omkar\gokhale sir\calculator\dialogbox.cpp(239): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-e:\omkar\gokhale sir\calculator\dialogbox.cpp(281): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-e:\omkar\gokhale sir\calculator\dialogbox.cpp(323): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-e:\omkar\gokhale sir\calculator\dialogbox.cpp(365): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-e:\omkar\gokhale sir\calculator\dialogbox.cpp(407): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-e:\omkar\gokhale sir\calculator\dialogbox.cpp(449): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-e:\omkar\gokhale sir\calculator\dialogbox.cpp(491): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-e:\omkar\gokhale sir\calculator\dialogbox.cpp(533): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-e:\omkar\gokhale sir\calculator\dialogbox.cpp(575): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-e:\omkar\gokhale sir\calculator\dialogbox.cpp(610): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-e:\omkar\gokhale sir\calculator\dialogbox.cpp(653): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
-e:\omkar\gokhale sir\calculator\dialogbox.cpp(653): warning C4244: 'initializing': conversion from 'float' to 'const int', possible loss of data
-e:\omkar\gokhale sir\calculator\dialogbox.cpp(665): warning C4244: 'argument': conversion from 'const int' to 'float', possible loss of data
-e:\omkar\gokhale sir\calculator\dialogbox.cpp(742): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-e:\omkar\gokhale sir\calculator\dialogbox.cpp(743): warning C4477: 'swprintf_s' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'double'
-e:\omkar\gokhale sir\calculator\dialogbox.cpp(814): warning C4477: 'swprintf_s' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'double'
-e:\omkar\gokhale sir\calculator\dialogbox.cpp(816): warning C4477: 'swprintf_s' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'double'
-e:\omkar\gokhale sir\calculator\dialogbox.cpp(818): warning C4477: 'swprintf_s' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'double'
-  Calculator.vcxproj -> E:\Omkar\Gokhale Sir\Calculator\Debug\Calculator.exe
+e:\omkar\gokhale sir\win32-calculator-app\calculator\dialogbox.cpp(222): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+e:\omkar\gokhale sir\win32-calculator-app\calculator\dialogbox.cpp(271): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+e:\omkar\gokhale sir\win32-calculator-app\calculator\dialogbox.cpp(320): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+e:\omkar\gokhale sir\win32-calculator-app\calculator\dialogbox.cpp(369): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+e:\omkar\gokhale sir\win32-calculator-app\calculator\dialogbox.cpp(418): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+e:\omkar\gokhale sir\win32-calculator-app\calculator\dialogbox.cpp(467): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+e:\omkar\gokhale sir\win32-calculator-app\calculator\dialogbox.cpp(516): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+e:\omkar\gokhale sir\win32-calculator-app\calculator\dialogbox.cpp(565): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+e:\omkar\gokhale sir\win32-calculator-app\calculator\dialogbox.cpp(614): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+e:\omkar\gokhale sir\win32-calculator-app\calculator\dialogbox.cpp(663): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+e:\omkar\gokhale sir\win32-calculator-app\calculator\dialogbox.cpp(703): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+e:\omkar\gokhale sir\win32-calculator-app\calculator\dialogbox.cpp(832): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+e:\omkar\gokhale sir\win32-calculator-app\calculator\dialogbox.cpp(833): warning C4477: 'swprintf_s' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'double'
+e:\omkar\gokhale sir\win32-calculator-app\calculator\dialogbox.cpp(901): warning C4477: 'fprintf_s' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'double'
+e:\omkar\gokhale sir\win32-calculator-app\calculator\dialogbox.cpp(901): warning C4477: 'fprintf_s' : format string '%d' requires an argument of type 'int', but variadic argument 2 has type 'double'
+e:\omkar\gokhale sir\win32-calculator-app\calculator\dialogbox.cpp(901): warning C4477: 'fprintf_s' : format string '%d' requires an argument of type 'int', but variadic argument 3 has type 'double'
+e:\omkar\gokhale sir\win32-calculator-app\calculator\dialogbox.cpp(920): warning C4477: 'swprintf_s' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'double'
+e:\omkar\gokhale sir\win32-calculator-app\calculator\dialogbox.cpp(922): warning C4477: 'swprintf_s' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'double'
+e:\omkar\gokhale sir\win32-calculator-app\calculator\dialogbox.cpp(924): warning C4477: 'swprintf_s' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'double'
+e:\omkar\gokhale sir\win32-calculator-app\calculator\dialogbox.cpp(934): warning C4477: 'swprintf_s' : format string '%f' requires an argument of type 'double', but variadic argument 1 has type 'int'
+e:\omkar\gokhale sir\win32-calculator-app\calculator\dialogbox.cpp(936): warning C4477: 'swprintf_s' : format string '%f' requires an argument of type 'double', but variadic argument 1 has type 'int'
+e:\omkar\gokhale sir\win32-calculator-app\calculator\dialogbox.cpp(938): warning C4477: 'swprintf_s' : format string '%f' requires an argument of type 'double', but variadic argument 1 has type 'int'
+  Calculator.vcxproj -> E:\Omkar\Gokhale Sir\win32-calculator-app\Calculator\Debug\Calculator.exe
