@@ -11,22 +11,22 @@ LRESULT WINAPI WndProc(HWND, UINT, WPARAM, LPARAM);
 
 #pragma region GlobalVariables
 static float ifNum1 = 0,
-ifNum2 = 0;
+	ifNum2 = 0;
 
 float result = 0;
 
 static int addStatus = 0,
-subStatus = 0,
-mulStatus = 0,
-divStatus = 0,
-modStatus = 0,
-initialStatus = 1;
+	subStatus = 0,
+	mulStatus = 0,
+	divStatus = 0,
+	modStatus = 0,
+	initialStatus = 1;
 
 static int addCounter = 0,
-subCounter = 0,
-mulCounter = 0,
-divCounter = 0,
-modCounter = 0;
+	subCounter = 0,
+	mulCounter = 0,
+	divCounter = 0,
+	modCounter = 0;
 
 enum numbers {
 	zero,
@@ -788,10 +788,9 @@ void Division(float num1, float num2, HWND hDlg) {
 	typedef float(*pfnDivision)(float, float);
 	pfnDivision pfnDiv = NULL;
 	TCHAR str[255];
-
 	if (num2 == 0)
 	{
-		MessageBox(hDlg, TEXT("Divide by Zero Error"), TEXT("End Task"), MB_OK);
+		MessageBox(hDlg, TEXT("Divide by Zero Error"), TEXT("End Task"), MB_OK | MB_ICONERROR);
 	}
 	else
 	{
@@ -810,7 +809,7 @@ void Division(float num1, float num2, HWND hDlg) {
 #pragma endregion
 
 #pragma region Modulus
-void Modulus(int num1, int num2, HWND hDlg) {
+void Modulus(float num1, float num2, HWND hDlg) {
 	HMODULE hLib = NULL;
 	typedef int(*pfnModulus)(int, int);
 	pfnModulus pfnMod = NULL;
@@ -818,7 +817,8 @@ void Modulus(int num1, int num2, HWND hDlg) {
 
 	if (num2 == 0)
 	{
-		MessageBox(hDlg, TEXT("Exception"), TEXT("End Task"), MB_OK);
+		swprintf_s(str, TEXT("%f"), num2);
+		SetDlgItemText(hDlg, ID_RESULTET, str);
 	}
 	else
 	{
@@ -830,7 +830,7 @@ void Modulus(int num1, int num2, HWND hDlg) {
 			DestroyWindow(hDlg);
 		}
 		result = pfnMod(num1, num2);
-		swprintf_s(str, TEXT("%d"), result);
+		swprintf_s(str, TEXT("%f"), result);
 		SetDlgItemText(hDlg, ID_RESULTET, str);
 	}
 }
@@ -839,55 +839,50 @@ void Modulus(int num1, int num2, HWND hDlg) {
 #pragma region CreateLogFiles
 void CreateLogFileForAddition(int status, int counter) {
 	FILE *fptr;
-	fopen_s(&fptr, "log.txt", "w");
-	fprintf_s(fptr, "\t\t####################################################\n\n");
-	fprintf_s(fptr, "\t\t####################################################\n\n");
-	fprintf_s(fptr, "\t\tAddition was performed : %d\n\n times", counter);
-	fprintf_s(fptr, "\t\t####################################################\n\n");
+	fopen_s(&fptr, "log.txt", "a");
+	//fprintf_s(fptr, "\t\t####################################################\n\n");
+	fprintf_s(fptr, "\t\tAddition was performed : %d time(s)\n", counter);
+	//fprintf_s(fptr, "\t\t####################################################\n\n");
 	fclose(fptr);
 	// MessageBox(NULL, TEXT("Log file created successfully"), TEXT("Success"), MB_ICONINFORMATION | MB_OK);
 }
 
 void CreateLogFileForSubtraction(int status, int counter) {
 	FILE *fptr;
-	fopen_s(&fptr, "log.txt", "w");
-	fprintf_s(fptr, "\t\t####################################################\n\n");
-	fprintf_s(fptr, "\t\t####################################################\n\n");
-	fprintf_s(fptr, "\t\tSubtraction was performed : %d\n\n times", counter);
-	fprintf_s(fptr, "\t\t####################################################\n\n");
+	fopen_s(&fptr, "log.txt", "a");
+	//fprintf_s(fptr, "\t\t####################################################\n\n");
+	fprintf_s(fptr, "\t\tSubtraction was performed :  %d time(s)\n", counter);
+	//fprintf_s(fptr, "\t\t####################################################\n\n");
 	fclose(fptr);
 	//MessageBox(NULL, TEXT("Log file created successfully"), TEXT("Success"), MB_ICONINFORMATION | MB_OK);
 }
 
 void CreateLogFileForMultiplication(int status, int counter) {
 	FILE *fptr;
-	fopen_s(&fptr, "log.txt", "w");
-	fprintf_s(fptr, "\t\t####################################################\n\n");
-	fprintf_s(fptr, "\t\t####################################################\n\n");
-	fprintf_s(fptr, "\t\tmultiplication was performed : %d\n\n times", counter);
-	fprintf_s(fptr, "\t\t####################################################\n\n");
+	fopen_s(&fptr, "log.txt", "a");
+	//fprintf_s(fptr, "\t\t####################################################\n\n");
+	fprintf_s(fptr, "\t\tmultiplication was performed :  %d time(s)\n", counter);
+	//fprintf_s(fptr, "\t\t####################################################\n\n");
 	fclose(fptr);
 	//MessageBox(NULL, TEXT("Log file created successfully"), TEXT("Success"), MB_ICONINFORMATION | MB_OK);
 }
 
 void CreateLogFileForDivision(int status, int counter) {
 	FILE *fptr;
-	fopen_s(&fptr, "log.txt", "w");
-	fprintf_s(fptr, "\t\t####################################################\n\n");
-	fprintf_s(fptr, "\t\t####################################################\n\n");
-	fprintf_s(fptr, "\t\tdivision was performed : %d\n\n times", counter);
-	fprintf_s(fptr, "\t\t####################################################\n\n");
+	fopen_s(&fptr, "log.txt", "a");
+	//fprintf_s(fptr, "\t\t####################################################\n\n");
+	fprintf_s(fptr, "\t\tdivision was performed :  %d time(s)\n", counter);
+	//fprintf_s(fptr, "\t\t####################################################\n\n");
 	fclose(fptr);
 	//MessageBox(NULL, TEXT("Log file created successfully"), TEXT("Success"), MB_ICONINFORMATION | MB_OK);
 }
 
 void CreateLogFileForModulus(int status, int counter) {
 	FILE *fptr;
-	fopen_s(&fptr, "log.txt", "w");
-	fprintf_s(fptr, "\t\t####################################################\n\n");
-	fprintf_s(fptr, "\t\t####################################################\n\n");
-	fprintf_s(fptr, "\t\tmodulus was performed : %d\n\n times", counter);
-	fprintf_s(fptr, "\t\t####################################################\n\n");
+	fopen_s(&fptr, "log.txt", "a");
+	//fprintf_s(fptr, "\t\t####################################################\n\n");
+	fprintf_s(fptr, "\t\tmodulus was performed :  %d time(s)\n", counter);
+	//fprintf_s(fptr, "\t\t####################################################\n\n");
 	fclose(fptr);
 	//MessageBox(NULL, TEXT("Log file created successfully"), TEXT("Success"), MB_ICONINFORMATION | MB_OK);
 }
@@ -896,7 +891,6 @@ void CreateLogFileForResetCheck(float result, float ifNum1, float ifNum2,
 	int addStatus, int subStatus, int mulStatus, int divStatus, int modStatus) {
 	FILE *fptr;
 	fopen_s(&fptr, "resetlog.txt", "w");
-	fprintf_s(fptr, "\t\t####################################################\n\n");
 	fprintf_s(fptr, "\t\t####################################################\n\n");
 	fprintf_s(fptr, "%d%d%d%d%d%d%d%d\n\n", result, ifNum1, ifNum2, addStatus, subStatus, mulStatus, divStatus, modStatus);
 	fprintf_s(fptr, "\t\t####################################################\n\n");

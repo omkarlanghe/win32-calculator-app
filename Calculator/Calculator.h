@@ -7,7 +7,7 @@ void Addition(float, float, HWND);
 void Subtraction(float, float, HWND);
 void Multiplication(float, float, HWND);
 void Division(float, float, HWND);
-void Modulus(int, int, HWND);
+void Modulus(float, float, HWND);
 void ResetValues(HWND);
 void CreateLogFileForAddition(int, int);
 void CreateLogFileForSubtraction(int, int);
