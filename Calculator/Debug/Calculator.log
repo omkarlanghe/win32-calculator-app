@@ -1,13 +1,13 @@
 ﻿  DialogBox.cpp
-e:\omkar\gokhale sir\win32-calculator-app\calculator\dialogbox.cpp(832): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-e:\omkar\gokhale sir\win32-calculator-app\calculator\dialogbox.cpp(832): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-e:\omkar\gokhale sir\win32-calculator-app\calculator\dialogbox.cpp(895): warning C4477: 'fprintf_s' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'double'
-e:\omkar\gokhale sir\win32-calculator-app\calculator\dialogbox.cpp(895): warning C4477: 'fprintf_s' : format string '%d' requires an argument of type 'int', but variadic argument 2 has type 'double'
-e:\omkar\gokhale sir\win32-calculator-app\calculator\dialogbox.cpp(895): warning C4477: 'fprintf_s' : format string '%d' requires an argument of type 'int', but variadic argument 3 has type 'double'
-e:\omkar\gokhale sir\win32-calculator-app\calculator\dialogbox.cpp(914): warning C4477: 'swprintf_s' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'double'
-e:\omkar\gokhale sir\win32-calculator-app\calculator\dialogbox.cpp(916): warning C4477: 'swprintf_s' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'double'
-e:\omkar\gokhale sir\win32-calculator-app\calculator\dialogbox.cpp(918): warning C4477: 'swprintf_s' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'double'
-e:\omkar\gokhale sir\win32-calculator-app\calculator\dialogbox.cpp(928): warning C4477: 'swprintf_s' : format string '%f' requires an argument of type 'double', but variadic argument 1 has type 'int'
-e:\omkar\gokhale sir\win32-calculator-app\calculator\dialogbox.cpp(930): warning C4477: 'swprintf_s' : format string '%f' requires an argument of type 'double', but variadic argument 1 has type 'int'
-e:\omkar\gokhale sir\win32-calculator-app\calculator\dialogbox.cpp(932): warning C4477: 'swprintf_s' : format string '%f' requires an argument of type 'double', but variadic argument 1 has type 'int'
+e:\omkar\gokhale sir\win32-calculator-app\calculator\dialogbox.cpp(855): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+e:\omkar\gokhale sir\win32-calculator-app\calculator\dialogbox.cpp(855): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+e:\omkar\gokhale sir\win32-calculator-app\calculator\dialogbox.cpp(918): warning C4477: 'fprintf_s' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'double'
+e:\omkar\gokhale sir\win32-calculator-app\calculator\dialogbox.cpp(918): warning C4477: 'fprintf_s' : format string '%d' requires an argument of type 'int', but variadic argument 2 has type 'double'
+e:\omkar\gokhale sir\win32-calculator-app\calculator\dialogbox.cpp(918): warning C4477: 'fprintf_s' : format string '%d' requires an argument of type 'int', but variadic argument 3 has type 'double'
+e:\omkar\gokhale sir\win32-calculator-app\calculator\dialogbox.cpp(937): warning C4477: 'swprintf_s' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'double'
+e:\omkar\gokhale sir\win32-calculator-app\calculator\dialogbox.cpp(939): warning C4477: 'swprintf_s' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'double'
+e:\omkar\gokhale sir\win32-calculator-app\calculator\dialogbox.cpp(941): warning C4477: 'swprintf_s' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'double'
+e:\omkar\gokhale sir\win32-calculator-app\calculator\dialogbox.cpp(951): warning C4477: 'swprintf_s' : format string '%f' requires an argument of type 'double', but variadic argument 1 has type 'int'
+e:\omkar\gokhale sir\win32-calculator-app\calculator\dialogbox.cpp(953): warning C4477: 'swprintf_s' : format string '%f' requires an argument of type 'double', but variadic argument 1 has type 'int'
+e:\omkar\gokhale sir\win32-calculator-app\calculator\dialogbox.cpp(955): warning C4477: 'swprintf_s' : format string '%f' requires an argument of type 'double', but variadic argument 1 has type 'int'
   Calculator.vcxproj -> E:\Omkar\Gokhale Sir\win32-calculator-app\Calculator\Debug\Calculator.exe

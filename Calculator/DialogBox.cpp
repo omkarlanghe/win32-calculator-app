@@ -704,6 +704,29 @@ BOOL CALLBACK MyDlgProc(HWND hDlg, UINT iMsg, WPARAM wParam, LPARAM lParam)
 			CreateLogFileForModulus(modStatus, modCounter);
 			break;
 
+		case ID_EQUAL:
+			if (addStatus == 1)
+			{
+				Addition(ifNum1, ifNum2, hDlg);
+			}
+			else if (subStatus == 1)
+			{
+				Subtraction(ifNum1, ifNum2, hDlg);
+			}
+			else if (mulStatus == 1)
+			{
+				Multiplication(ifNum1, ifNum2, hDlg);
+			}
+			else if (divStatus == 1)
+			{
+				Division(ifNum1, ifNum2, hDlg);
+			}
+			else if (modStatus == 1)
+			{
+				Modulus(ifNum1, ifNum2, hDlg);
+			}
+			break;
+
 		case ID_EXIT:
 			MessageBox(hDlg, TEXT("Are you sure you want to exit?"), TEXT("End Task"), MB_ICONQUESTION | MB_OK);
 			EndDialog(hDlg, 0);

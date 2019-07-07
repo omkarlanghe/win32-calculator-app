@@ -20,6 +20,7 @@
 #define ID_DOT 15
 
 #define ID_EXIT 16
+#define ID_EQUAL 21
 #define ID_RESET 17
 
 #define ID_NUM1ET 18
